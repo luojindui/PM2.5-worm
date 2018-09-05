@@ -1,0 +1,2168 @@
+var cityStore = [
+  {
+    "concentration": "62 μg/m³",
+    "city": "新疆-喀什",
+    "state": "中度污染",
+    "ranking": "1"
+  },
+  {
+    "concentration": "37 μg/m³",
+    "city": "新疆-博州",
+    "state": "轻度污染",
+    "ranking": "2"
+  },
+  {
+    "concentration": "80 μg/m³",
+    "city": "新疆-库尔勒",
+    "state": "轻度污染",
+    "ranking": "3"
+  },
+  {
+    "concentration": "56 μg/m³",
+    "city": "新疆-阿克苏",
+    "state": "轻度污染",
+    "ranking": "4"
+  },
+  {
+    "concentration": "53 μg/m³",
+    "city": "浙江-嘉兴",
+    "state": "轻度污染",
+    "ranking": "5"
+  },
+  {
+    "concentration": "45 μg/m³",
+    "city": "新疆-哈密",
+    "state": "轻度污染",
+    "ranking": "6"
+  },
+  {
+    "concentration": "55 μg/m³",
+    "city": "甘肃-酒泉",
+    "state": "轻度污染",
+    "ranking": "7"
+  },
+  {
+    "concentration": "52 μg/m³",
+    "city": "新疆-乌鲁木齐",
+    "state": "轻度污染",
+    "ranking": "8"
+  },
+  {
+    "concentration": "39 μg/m³",
+    "city": "新疆-和田",
+    "state": "轻度污染",
+    "ranking": "9"
+  },
+  {
+    "concentration": "38 μg/m³",
+    "city": "浙江-宁波",
+    "state": "轻度污染",
+    "ranking": "10"
+  },
+  {
+    "concentration": "81 μg/m³",
+    "city": "云南-德宏州",
+    "state": "轻度污染",
+    "ranking": "11"
+  },
+  {
+    "concentration": "74 μg/m³",
+    "city": "山西-临汾",
+    "state": "轻度污染",
+    "ranking": "12"
+  },
+  {
+    "concentration": "75 μg/m³",
+    "city": "山西-阳泉",
+    "state": "轻度污染",
+    "ranking": "13"
+  },
+  {
+    "concentration": "53 μg/m³",
+    "city": "新疆-吐鲁番",
+    "state": "轻度污染",
+    "ranking": "14"
+  },
+  {
+    "concentration": "38 μg/m³",
+    "city": "安徽-马鞍山",
+    "state": "轻度污染",
+    "ranking": "15"
+  },
+  {
+    "concentration": "49 μg/m³",
+    "city": "浙江-台州",
+    "state": "轻度污染",
+    "ranking": "16"
+  },
+  {
+    "concentration": "76 μg/m³",
+    "city": "河北-石家庄",
+    "state": "轻度污染",
+    "ranking": "17"
+  },
+  {
+    "concentration": "33 μg/m³",
+    "city": "浙江-金华",
+    "state": "轻度污染",
+    "ranking": "18"
+  },
+  {
+    "concentration": "69 μg/m³",
+    "city": "江苏-连云港",
+    "state": "轻度污染",
+    "ranking": "19"
+  },
+  {
+    "concentration": "54 μg/m³",
+    "city": "山东-淄博",
+    "state": "轻度污染",
+    "ranking": "20"
+  },
+  {
+    "concentration": "41 μg/m³",
+    "city": "江苏-吴江",
+    "state": "轻度污染",
+    "ranking": "21"
+  },
+  {
+    "concentration": "50 μg/m³",
+    "city": "山东-胶南",
+    "state": "轻度污染",
+    "ranking": "22"
+  },
+  {
+    "concentration": "75 μg/m³",
+    "city": "河南-焦作",
+    "state": "轻度污染",
+    "ranking": "23"
+  },
+  {
+    "concentration": "54 μg/m³",
+    "city": "新疆-昌吉州",
+    "state": "轻度污染",
+    "ranking": "24"
+  },
+  {
+    "concentration": "27 μg/m³",
+    "city": "江苏-金坛",
+    "state": "轻度污染",
+    "ranking": "25"
+  },
+  {
+    "concentration": "66 μg/m³",
+    "city": "江苏-徐州",
+    "state": "轻度污染",
+    "ranking": "26"
+  },
+  {
+    "concentration": "35 μg/m³",
+    "city": "山东-潍坊",
+    "state": "轻度污染",
+    "ranking": "27"
+  },
+  {
+    "concentration": "22 μg/m³",
+    "city": "山东-青岛",
+    "state": "轻度污染",
+    "ranking": "28"
+  },
+  {
+    "concentration": "24 μg/m³",
+    "city": "山东-济宁",
+    "state": "良",
+    "ranking": "29"
+  },
+  {
+    "concentration": "40 μg/m³",
+    "city": "江苏-常州",
+    "state": "良",
+    "ranking": "30"
+  },
+  {
+    "concentration": "61 μg/m³",
+    "city": "安徽-宿州",
+    "state": "良",
+    "ranking": "31"
+  },
+  {
+    "concentration": "39 μg/m³",
+    "city": "山东-枣庄",
+    "state": "良",
+    "ranking": "32"
+  },
+  {
+    "concentration": "25 μg/m³",
+    "city": "新疆-五家渠",
+    "state": "良",
+    "ranking": "33"
+  },
+  {
+    "concentration": "55 μg/m³",
+    "city": "山东-日照",
+    "state": "良",
+    "ranking": "34"
+  },
+  {
+    "concentration": "22 μg/m³",
+    "city": "山东-东营",
+    "state": "良",
+    "ranking": "35"
+  },
+  {
+    "concentration": "56 μg/m³",
+    "city": "安徽-淮北",
+    "state": "良",
+    "ranking": "36"
+  },
+  {
+    "concentration": "86 μg/m³",
+    "city": "河南-信阳",
+    "state": "良",
+    "ranking": "37"
+  },
+  {
+    "concentration": "69 μg/m³",
+    "city": "河南-新乡",
+    "state": "良",
+    "ranking": "38"
+  },
+  {
+    "concentration": "33 μg/m³",
+    "city": "山东-寿光",
+    "state": "良",
+    "ranking": "39"
+  },
+  {
+    "concentration": "28 μg/m³",
+    "city": "山东-莱芜",
+    "state": "良",
+    "ranking": "40"
+  },
+  {
+    "concentration": "38 μg/m³",
+    "city": "山东-胶州",
+    "state": "良",
+    "ranking": "41"
+  },
+  {
+    "concentration": "48 μg/m³",
+    "city": "安徽-蚌埠",
+    "state": "良",
+    "ranking": "42"
+  },
+  {
+    "concentration": "41 μg/m³",
+    "city": "山东-菏泽",
+    "state": "良",
+    "ranking": "43"
+  },
+  {
+    "concentration": "44 μg/m³",
+    "city": "安徽-芜湖",
+    "state": "良",
+    "ranking": "44"
+  },
+  {
+    "concentration": "29 μg/m³",
+    "city": "江苏-宜兴",
+    "state": "良",
+    "ranking": "45"
+  },
+  {
+    "concentration": "48 μg/m³",
+    "city": "浙江-绍兴",
+    "state": "良",
+    "ranking": "46"
+  },
+  {
+    "concentration": "59 μg/m³",
+    "city": "江苏-宿迁",
+    "state": "良",
+    "ranking": "47"
+  },
+  {
+    "concentration": "28 μg/m³",
+    "city": "江苏-无锡",
+    "state": "良",
+    "ranking": "48"
+  },
+  {
+    "concentration": "55 μg/m³",
+    "city": "河南-漯河",
+    "state": "良",
+    "ranking": "49"
+  },
+  {
+    "concentration": "42 μg/m³",
+    "city": "河北-保定",
+    "state": "良",
+    "ranking": "50"
+  },
+  {
+    "concentration": "41 μg/m³",
+    "city": "甘肃-嘉峪关",
+    "state": "良",
+    "ranking": "51"
+  },
+  {
+    "concentration": "26 μg/m³",
+    "city": "山东-乳山",
+    "state": "良",
+    "ranking": "52"
+  },
+  {
+    "concentration": "48 μg/m³",
+    "city": "河南-安阳",
+    "state": "良",
+    "ranking": "53"
+  },
+  {
+    "concentration": "62 μg/m³",
+    "city": "安徽-合肥",
+    "state": "良",
+    "ranking": "54"
+  },
+  {
+    "concentration": "23 μg/m³",
+    "city": "黑龙江-七台河",
+    "state": "良",
+    "ranking": "55"
+  },
+  {
+    "concentration": "40 μg/m³",
+    "city": "安徽-淮南",
+    "state": "良",
+    "ranking": "56"
+  },
+  {
+    "concentration": "54 μg/m³",
+    "city": "云南-临沧",
+    "state": "良",
+    "ranking": "57"
+  },
+  {
+    "concentration": "25 μg/m³",
+    "city": "江苏-昆山",
+    "state": "良",
+    "ranking": "58"
+  },
+  {
+    "concentration": "47 μg/m³",
+    "city": "浙江-临安",
+    "state": "良",
+    "ranking": "59"
+  },
+  {
+    "concentration": "31 μg/m³",
+    "city": "山东-临沂",
+    "state": "良",
+    "ranking": "60"
+  },
+  {
+    "concentration": "71 μg/m³",
+    "city": "广东-揭阳",
+    "state": "良",
+    "ranking": "61"
+  },
+  {
+    "concentration": "56 μg/m³",
+    "city": "山东-莱州",
+    "state": "良",
+    "ranking": "62"
+  },
+  {
+    "concentration": "77 μg/m³",
+    "city": "河南-平顶山",
+    "state": "良",
+    "ranking": "63"
+  },
+  {
+    "concentration": "64 μg/m³",
+    "city": "青海-西宁",
+    "state": "良",
+    "ranking": "64"
+  },
+  {
+    "concentration": "67 μg/m³",
+    "city": "河南-濮阳",
+    "state": "良",
+    "ranking": "65"
+  },
+  {
+    "concentration": "36 μg/m³",
+    "city": "山东-莱西",
+    "state": "良",
+    "ranking": "66"
+  },
+  {
+    "concentration": "30 μg/m³",
+    "city": "甘肃-金昌",
+    "state": "良",
+    "ranking": "67"
+  },
+  {
+    "concentration": "67 μg/m³",
+    "city": "安徽-宣城",
+    "state": "良",
+    "ranking": "68"
+  },
+  {
+    "concentration": "7 μg/m³",
+    "city": "黑龙江-齐齐哈尔",
+    "state": "良",
+    "ranking": "69"
+  },
+  {
+    "concentration": "62 μg/m³",
+    "city": "河南-鹤壁",
+    "state": "良",
+    "ranking": "70"
+  },
+  {
+    "concentration": "31 μg/m³",
+    "city": "浙江-湖州",
+    "state": "良",
+    "ranking": "71"
+  },
+  {
+    "concentration": "37 μg/m³",
+    "city": "黑龙江-鹤岗",
+    "state": "良",
+    "ranking": "72"
+  },
+  {
+    "concentration": "45 μg/m³",
+    "city": "安徽-六安",
+    "state": "良",
+    "ranking": "73"
+  },
+  {
+    "concentration": "30 μg/m³",
+    "city": "江苏-淮安",
+    "state": "良",
+    "ranking": "74"
+  },
+  {
+    "concentration": "35 μg/m³",
+    "city": "新疆-克拉玛依",
+    "state": "良",
+    "ranking": "75"
+  },
+  {
+    "concentration": "34 μg/m³",
+    "city": "江苏-苏州",
+    "state": "良",
+    "ranking": "76"
+  },
+  {
+    "concentration": "19 μg/m³",
+    "city": "河北-沧州",
+    "state": "良",
+    "ranking": "77"
+  },
+  {
+    "concentration": "35 μg/m³",
+    "city": "江苏-溧阳",
+    "state": "良",
+    "ranking": "78"
+  },
+  {
+    "concentration": "21 μg/m³",
+    "city": "甘肃-张掖",
+    "state": "良",
+    "ranking": "79"
+  },
+  {
+    "concentration": "26 μg/m³",
+    "city": "甘肃-武威",
+    "state": "良",
+    "ranking": "80"
+  },
+  {
+    "concentration": "52 μg/m³",
+    "city": "山西-太原",
+    "state": "良",
+    "ranking": "81"
+  },
+  {
+    "concentration": "49 μg/m³",
+    "city": "河北-邯郸",
+    "state": "良",
+    "ranking": "82"
+  },
+  {
+    "concentration": "33 μg/m³",
+    "city": "云南-玉溪",
+    "state": "良",
+    "ranking": "83"
+  },
+  {
+    "concentration": "53 μg/m³",
+    "city": "安徽-阜阳",
+    "state": "良",
+    "ranking": "84"
+  },
+  {
+    "concentration": "49 μg/m³",
+    "city": "河南-开封",
+    "state": "良",
+    "ranking": "85"
+  },
+  {
+    "concentration": "57 μg/m³",
+    "city": "福建-漳州",
+    "state": "良",
+    "ranking": "86"
+  },
+  {
+    "concentration": "16 μg/m³",
+    "city": "江苏-句容",
+    "state": "良",
+    "ranking": "87"
+  },
+  {
+    "concentration": "49 μg/m³",
+    "city": "河南-许昌",
+    "state": "良",
+    "ranking": "88"
+  },
+  {
+    "concentration": "63 μg/m³",
+    "city": "云南-曲靖",
+    "state": "良",
+    "ranking": "89"
+  },
+  {
+    "concentration": "41 μg/m³",
+    "city": "江苏-太仓",
+    "state": "良",
+    "ranking": "90"
+  },
+  {
+    "concentration": "43 μg/m³",
+    "city": "山东-章丘",
+    "state": "良",
+    "ranking": "91"
+  },
+  {
+    "concentration": "37 μg/m³",
+    "city": "河南-商丘",
+    "state": "良",
+    "ranking": "92"
+  },
+  {
+    "concentration": "51 μg/m³",
+    "city": "浙江-杭州",
+    "state": "良",
+    "ranking": "93"
+  },
+  {
+    "concentration": "34 μg/m³",
+    "city": "山东-荣成",
+    "state": "良",
+    "ranking": "94"
+  },
+  {
+    "concentration": "55 μg/m³",
+    "city": "青海-果洛州",
+    "state": "良",
+    "ranking": "95"
+  },
+  {
+    "concentration": "35 μg/m³",
+    "city": "青海-海南州",
+    "state": "良",
+    "ranking": "96"
+  },
+  {
+    "concentration": "24 μg/m³",
+    "city": "山东-济南",
+    "state": "良",
+    "ranking": "97"
+  },
+  {
+    "concentration": "48 μg/m³",
+    "city": "河南-郑州",
+    "state": "良",
+    "ranking": "98"
+  },
+  {
+    "concentration": "26 μg/m³",
+    "city": "浙江-丽水",
+    "state": "良",
+    "ranking": "99"
+  },
+  {
+    "concentration": "57 μg/m³",
+    "city": "湖南-长沙",
+    "state": "良",
+    "ranking": "100"
+  },
+  {
+    "concentration": "52 μg/m³",
+    "city": "河北-邢台",
+    "state": "良",
+    "ranking": "101"
+  },
+  {
+    "concentration": "47 μg/m³",
+    "city": "云南-保山",
+    "state": "良",
+    "ranking": "102"
+  },
+  {
+    "concentration": "44 μg/m³",
+    "city": "江苏-张家港",
+    "state": "良",
+    "ranking": "103"
+  },
+  {
+    "concentration": "31 μg/m³",
+    "city": "辽宁-抚顺",
+    "state": "良",
+    "ranking": "104"
+  },
+  {
+    "concentration": "36 μg/m³",
+    "city": "河南-周口",
+    "state": "良",
+    "ranking": "105"
+  },
+  {
+    "concentration": "51 μg/m³",
+    "city": "内蒙古-呼和浩特",
+    "state": "良",
+    "ranking": "106"
+  },
+  {
+    "concentration": "27 μg/m³",
+    "city": "山东-文登",
+    "state": "良",
+    "ranking": "107"
+  },
+  {
+    "concentration": "18 μg/m³",
+    "city": "河北-唐山",
+    "state": "良",
+    "ranking": "108"
+  },
+  {
+    "concentration": "53 μg/m³",
+    "city": "河南-驻马店",
+    "state": "良",
+    "ranking": "109"
+  },
+  {
+    "concentration": "40 μg/m³",
+    "city": "云南-楚雄州",
+    "state": "良",
+    "ranking": "110"
+  },
+  {
+    "concentration": "44 μg/m³",
+    "city": "安徽-池州",
+    "state": "良",
+    "ranking": "111"
+  },
+  {
+    "concentration": "78 μg/m³",
+    "city": "湖南-张家界",
+    "state": "良",
+    "ranking": "112"
+  },
+  {
+    "concentration": "35 μg/m³",
+    "city": "江苏-镇江",
+    "state": "良",
+    "ranking": "113"
+  },
+  {
+    "concentration": "20 μg/m³",
+    "city": "山东-聊城",
+    "state": "良",
+    "ranking": "114"
+  },
+  {
+    "concentration": "33 μg/m³",
+    "city": "河北-衡水",
+    "state": "良",
+    "ranking": "115"
+  },
+  {
+    "concentration": "51 μg/m³",
+    "city": "山东-烟台",
+    "state": "良",
+    "ranking": "116"
+  },
+  {
+    "concentration": "41 μg/m³",
+    "city": "广东-江门",
+    "state": "良",
+    "ranking": "117"
+  },
+  {
+    "concentration": "45 μg/m³",
+    "city": "云南-怒江州",
+    "state": "良",
+    "ranking": "118"
+  },
+  {
+    "concentration": "50 μg/m³",
+    "city": "湖北-宜昌",
+    "state": "良",
+    "ranking": "119"
+  },
+  {
+    "concentration": "42 μg/m³",
+    "city": "山西-晋中",
+    "state": "良",
+    "ranking": "120"
+  },
+  {
+    "concentration": "48 μg/m³",
+    "city": "江苏-江阴",
+    "state": "良",
+    "ranking": "121"
+  },
+  {
+    "concentration": "34 μg/m³",
+    "city": "安徽-滁州",
+    "state": "良",
+    "ranking": "122"
+  },
+  {
+    "concentration": "26 μg/m³",
+    "city": "新疆-石河子",
+    "state": "良",
+    "ranking": "123"
+  },
+  {
+    "concentration": "27 μg/m³",
+    "city": "青海-玉树州",
+    "state": "良",
+    "ranking": "124"
+  },
+  {
+    "concentration": "27 μg/m³",
+    "city": "山东-即墨",
+    "state": "良",
+    "ranking": "125"
+  },
+  {
+    "concentration": "32 μg/m³",
+    "city": "河北-秦皇岛",
+    "state": "良",
+    "ranking": "126"
+  },
+  {
+    "concentration": "26 μg/m³",
+    "city": "黑龙江-牡丹江",
+    "state": "良",
+    "ranking": "127"
+  },
+  {
+    "concentration": "54 μg/m³",
+    "city": "湖北-鄂州",
+    "state": "良",
+    "ranking": "128"
+  },
+  {
+    "concentration": "29 μg/m³",
+    "city": "山东-蓬莱",
+    "state": "良",
+    "ranking": "129"
+  },
+  {
+    "concentration": "32 μg/m³",
+    "city": "云南-昆明",
+    "state": "良",
+    "ranking": "130"
+  },
+  {
+    "concentration": "47 μg/m³",
+    "city": "浙江-温州",
+    "state": "良",
+    "ranking": "131"
+  },
+  {
+    "concentration": "52 μg/m³",
+    "city": "广西-崇左",
+    "state": "良",
+    "ranking": "132"
+  },
+  {
+    "concentration": "31 μg/m³",
+    "city": "江苏-南京",
+    "state": "良",
+    "ranking": "133"
+  },
+  {
+    "concentration": "48 μg/m³",
+    "city": "山东-威海",
+    "state": "良",
+    "ranking": "134"
+  },
+  {
+    "concentration": "50 μg/m³",
+    "city": "湖南-岳阳",
+    "state": "良",
+    "ranking": "135"
+  },
+  {
+    "concentration": "31 μg/m³",
+    "city": "青海-海西州",
+    "state": "良",
+    "ranking": "136"
+  },
+  {
+    "concentration": "15 μg/m³",
+    "city": "内蒙古-包头",
+    "state": "良",
+    "ranking": "137"
+  },
+  {
+    "concentration": "41 μg/m³",
+    "city": "湖南-永州",
+    "state": "良",
+    "ranking": "138"
+  },
+  {
+    "concentration": "30 μg/m³",
+    "city": "江苏-常熟",
+    "state": "良",
+    "ranking": "139"
+  },
+  {
+    "concentration": "27 μg/m³",
+    "city": "青海-黄南州",
+    "state": "良",
+    "ranking": "140"
+  },
+  {
+    "concentration": "42 μg/m³",
+    "city": "安徽-亳州",
+    "state": "良",
+    "ranking": "141"
+  },
+  {
+    "concentration": "29 μg/m³",
+    "city": "黑龙江-佳木斯",
+    "state": "良",
+    "ranking": "142"
+  },
+  {
+    "concentration": "44 μg/m³",
+    "city": "山西-晋城",
+    "state": "良",
+    "ranking": "143"
+  },
+  {
+    "concentration": "46 μg/m³",
+    "city": "安徽-铜陵",
+    "state": "良",
+    "ranking": "144"
+  },
+  {
+    "concentration": "18 μg/m³",
+    "city": "浙江-衢州",
+    "state": "良",
+    "ranking": "145"
+  },
+  {
+    "concentration": "30 μg/m³",
+    "city": "天津-天津",
+    "state": "良",
+    "ranking": "146"
+  },
+  {
+    "concentration": "14 μg/m³",
+    "city": "黑龙江-双鸭山",
+    "state": "良",
+    "ranking": "147"
+  },
+  {
+    "concentration": "26 μg/m³",
+    "city": "江苏-扬州",
+    "state": "良",
+    "ranking": "148"
+  },
+  {
+    "concentration": "51 μg/m³",
+    "city": "山西-大同",
+    "state": "良",
+    "ranking": "149"
+  },
+  {
+    "concentration": "46 μg/m³",
+    "city": "广西-来宾",
+    "state": "良",
+    "ranking": "150"
+  },
+  {
+    "concentration": "46 μg/m³",
+    "city": "广东-阳江",
+    "state": "良",
+    "ranking": "151"
+  },
+  {
+    "concentration": "22 μg/m³",
+    "city": "江西-九江",
+    "state": "良",
+    "ranking": "152"
+  },
+  {
+    "concentration": "39 μg/m³",
+    "city": "广西-南宁",
+    "state": "良",
+    "ranking": "153"
+  },
+  {
+    "concentration": "46 μg/m³",
+    "city": "湖北-黄冈",
+    "state": "良",
+    "ranking": "154"
+  },
+  {
+    "concentration": "49 μg/m³",
+    "city": "湖南-益阳",
+    "state": "良",
+    "ranking": "155"
+  },
+  {
+    "concentration": "34 μg/m³",
+    "city": "山东-泰安",
+    "state": "良",
+    "ranking": "156"
+  },
+  {
+    "concentration": "59 μg/m³",
+    "city": "云南-西双版纳州",
+    "state": "良",
+    "ranking": "157"
+  },
+  {
+    "concentration": "16 μg/m³",
+    "city": "山东-平度",
+    "state": "良",
+    "ranking": "158"
+  },
+  {
+    "concentration": "37 μg/m³",
+    "city": "湖北-黄石",
+    "state": "良",
+    "ranking": "159"
+  },
+  {
+    "concentration": "52 μg/m³",
+    "city": "广东-东莞",
+    "state": "良",
+    "ranking": "160"
+  },
+  {
+    "concentration": "55 μg/m³",
+    "city": "广东-中山",
+    "state": "良",
+    "ranking": "161"
+  },
+  {
+    "concentration": "29 μg/m³",
+    "city": "河北-廊坊",
+    "state": "良",
+    "ranking": "162"
+  },
+  {
+    "concentration": "46 μg/m³",
+    "city": "广东-潮州",
+    "state": "良",
+    "ranking": "163"
+  },
+  {
+    "concentration": "43 μg/m³",
+    "city": "福建-龙岩",
+    "state": "良",
+    "ranking": "164"
+  },
+  {
+    "concentration": "36 μg/m³",
+    "city": "湖北-荆州",
+    "state": "良",
+    "ranking": "165"
+  },
+  {
+    "concentration": "53 μg/m³",
+    "city": "湖南-湘西州",
+    "state": "良",
+    "ranking": "166"
+  },
+  {
+    "concentration": "37 μg/m³",
+    "city": "辽宁-丹东",
+    "state": "良",
+    "ranking": "167"
+  },
+  {
+    "concentration": "18 μg/m³",
+    "city": "辽宁-大连",
+    "state": "良",
+    "ranking": "168"
+  },
+  {
+    "concentration": "42 μg/m³",
+    "city": "湖南-湘潭",
+    "state": "良",
+    "ranking": "169"
+  },
+  {
+    "concentration": "50 μg/m³",
+    "city": "湖北-武汉",
+    "state": "良",
+    "ranking": "170"
+  },
+  {
+    "concentration": "14 μg/m³",
+    "city": "河北-张家口",
+    "state": "良",
+    "ranking": "171"
+  },
+  {
+    "concentration": "14 μg/m³",
+    "city": "辽宁-营口",
+    "state": "良",
+    "ranking": "172"
+  },
+  {
+    "concentration": "35 μg/m³",
+    "city": "山西-忻州",
+    "state": "良",
+    "ranking": "173"
+  },
+  {
+    "concentration": "26 μg/m³",
+    "city": "西藏-拉萨",
+    "state": "良",
+    "ranking": "174"
+  },
+  {
+    "concentration": "29 μg/m³",
+    "city": "山东-招远",
+    "state": "良",
+    "ranking": "175"
+  },
+  {
+    "concentration": "11 μg/m³",
+    "city": "江西-南昌",
+    "state": "良",
+    "ranking": "176"
+  },
+  {
+    "concentration": "40 μg/m³",
+    "city": "湖北-孝感",
+    "state": "良",
+    "ranking": "177"
+  },
+  {
+    "concentration": "32 μg/m³",
+    "city": "湖南-株洲",
+    "state": "良",
+    "ranking": "178"
+  },
+  {
+    "concentration": "31 μg/m³",
+    "city": "江苏-泰州",
+    "state": "良",
+    "ranking": "179"
+  },
+  {
+    "concentration": "24 μg/m³",
+    "city": "辽宁-本溪",
+    "state": "良",
+    "ranking": "180"
+  },
+  {
+    "concentration": "41 μg/m³",
+    "city": "安徽-安庆",
+    "state": "良",
+    "ranking": "181"
+  },
+  {
+    "concentration": "38 μg/m³",
+    "city": "江苏-盐城",
+    "state": "良",
+    "ranking": "182"
+  },
+  {
+    "concentration": "30 μg/m³",
+    "city": "辽宁-沈阳",
+    "state": "良",
+    "ranking": "183"
+  },
+  {
+    "concentration": "36 μg/m³",
+    "city": "湖南-邵阳",
+    "state": "良",
+    "ranking": "184"
+  },
+  {
+    "concentration": "41 μg/m³",
+    "city": "湖北-随州",
+    "state": "良",
+    "ranking": "185"
+  },
+  {
+    "concentration": "46 μg/m³",
+    "city": "江西-新余",
+    "state": "良",
+    "ranking": "186"
+  },
+  {
+    "concentration": "31 μg/m³",
+    "city": "山东-德州",
+    "state": "良",
+    "ranking": "187"
+  },
+  {
+    "concentration": "43 μg/m³",
+    "city": "广东-佛山",
+    "state": "良",
+    "ranking": "188"
+  },
+  {
+    "concentration": "24 μg/m³",
+    "city": "陕西-铜川",
+    "state": "良",
+    "ranking": "189"
+  },
+  {
+    "concentration": "37 μg/m³",
+    "city": "广东-肇庆",
+    "state": "良",
+    "ranking": "190"
+  },
+  {
+    "concentration": "40 μg/m³",
+    "city": "江西-赣州",
+    "state": "良",
+    "ranking": "191"
+  },
+  {
+    "concentration": "36 μg/m³",
+    "city": "浙江-富阳",
+    "state": "良",
+    "ranking": "192"
+  },
+  {
+    "concentration": "35 μg/m³",
+    "city": "湖北-荆门",
+    "state": "良",
+    "ranking": "193"
+  },
+  {
+    "concentration": "17 μg/m³",
+    "city": "内蒙古-乌兰察布",
+    "state": "良",
+    "ranking": "194"
+  },
+  {
+    "concentration": "35 μg/m³",
+    "city": "甘肃-白银",
+    "state": "良",
+    "ranking": "195"
+  },
+  {
+    "concentration": "28 μg/m³",
+    "city": "浙江-义乌",
+    "state": "良",
+    "ranking": "196"
+  },
+  {
+    "concentration": "34 μg/m³",
+    "city": "湖南-衡阳",
+    "state": "良",
+    "ranking": "197"
+  },
+  {
+    "concentration": "25 μg/m³",
+    "city": "江西-鹰潭",
+    "state": "良",
+    "ranking": "198"
+  },
+  {
+    "concentration": "35 μg/m³",
+    "city": "云南-大理州",
+    "state": "良",
+    "ranking": "199"
+  },
+  {
+    "concentration": "36 μg/m³",
+    "city": "上海-上海",
+    "state": "良",
+    "ranking": "200"
+  },
+  {
+    "concentration": "27 μg/m³",
+    "city": "云南-丽江",
+    "state": "良",
+    "ranking": "201"
+  },
+  {
+    "concentration": "41 μg/m³",
+    "city": "广西-桂林",
+    "state": "良",
+    "ranking": "202"
+  },
+  {
+    "concentration": "30 μg/m³",
+    "city": "湖南-娄底",
+    "state": "良",
+    "ranking": "203"
+  },
+  {
+    "concentration": "34 μg/m³",
+    "city": "山东-滨州",
+    "state": "良",
+    "ranking": "204"
+  },
+  {
+    "concentration": "37 μg/m³",
+    "city": "广东-深圳",
+    "state": "良",
+    "ranking": "205"
+  },
+  {
+    "concentration": "38 μg/m³",
+    "city": "湖南-常德",
+    "state": "良",
+    "ranking": "206"
+  },
+  {
+    "concentration": "29 μg/m³",
+    "city": "江西-吉安",
+    "state": "良",
+    "ranking": "207"
+  },
+  {
+    "concentration": "22 μg/m³",
+    "city": "青海-海北州",
+    "state": "良",
+    "ranking": "208"
+  },
+  {
+    "concentration": "15 μg/m³",
+    "city": "辽宁-辽阳",
+    "state": "良",
+    "ranking": "209"
+  },
+  {
+    "concentration": "20 μg/m³",
+    "city": "陕西-延安",
+    "state": "良",
+    "ranking": "210"
+  },
+  {
+    "concentration": "22 μg/m³",
+    "city": "西藏-日喀则",
+    "state": "良",
+    "ranking": "211"
+  },
+  {
+    "concentration": "22 μg/m³",
+    "city": "广东-汕尾",
+    "state": "良",
+    "ranking": "212"
+  },
+  {
+    "concentration": "20 μg/m³",
+    "city": "广东-汕头",
+    "state": "良",
+    "ranking": "213"
+  },
+  {
+    "concentration": "74 μg/m³",
+    "city": "河南-南阳",
+    "state": "良",
+    "ranking": "214"
+  },
+  {
+    "concentration": "24 μg/m³",
+    "city": "福建-泉州",
+    "state": "良",
+    "ranking": "215"
+  },
+  {
+    "concentration": "39 μg/m³",
+    "city": "甘肃-兰州",
+    "state": "良",
+    "ranking": "216"
+  },
+  {
+    "concentration": "10 μg/m³",
+    "city": "吉林-松原",
+    "state": "良",
+    "ranking": "217"
+  },
+  {
+    "concentration": "35 μg/m³",
+    "city": "湖北-咸宁",
+    "state": "良",
+    "ranking": "218"
+  },
+  {
+    "concentration": "29 μg/m³",
+    "city": "广东-韶关",
+    "state": "良",
+    "ranking": "219"
+  },
+  {
+    "concentration": "32 μg/m³",
+    "city": "广西-玉林",
+    "state": "良",
+    "ranking": "220"
+  },
+  {
+    "concentration": "29 μg/m³",
+    "city": "北京-北京",
+    "state": "良",
+    "ranking": "221"
+  },
+  {
+    "concentration": "28 μg/m³",
+    "city": "四川-攀枝花",
+    "state": "良",
+    "ranking": "222"
+  },
+  {
+    "concentration": "37 μg/m³",
+    "city": "江西-宜春",
+    "state": "良",
+    "ranking": "223"
+  },
+  {
+    "concentration": "37 μg/m³",
+    "city": "广东-珠海",
+    "state": "良",
+    "ranking": "224"
+  },
+  {
+    "concentration": "27 μg/m³",
+    "city": "广西-柳州",
+    "state": "良",
+    "ranking": "225"
+  },
+  {
+    "concentration": "34 μg/m³",
+    "city": "广东-河源",
+    "state": "良",
+    "ranking": "226"
+  },
+  {
+    "concentration": "12 μg/m³",
+    "city": "辽宁-锦州",
+    "state": "良",
+    "ranking": "227"
+  },
+  {
+    "concentration": "39 μg/m³",
+    "city": "辽宁-葫芦岛",
+    "state": "良",
+    "ranking": "228"
+  },
+  {
+    "concentration": "7 μg/m³",
+    "city": "河北-承德",
+    "state": "良",
+    "ranking": "229"
+  },
+  {
+    "concentration": "17 μg/m³",
+    "city": "西藏-那曲",
+    "state": "良",
+    "ranking": "230"
+  },
+  {
+    "concentration": "29 μg/m³",
+    "city": "广东-惠州",
+    "state": "良",
+    "ranking": "231"
+  },
+  {
+    "concentration": "25 μg/m³",
+    "city": "福建-莆田",
+    "state": "良",
+    "ranking": "232"
+  },
+  {
+    "concentration": "15 μg/m³",
+    "city": "四川-凉山州",
+    "state": "良",
+    "ranking": "233"
+  },
+  {
+    "concentration": "31 μg/m³",
+    "city": "湖南-郴州",
+    "state": "良",
+    "ranking": "234"
+  },
+  {
+    "concentration": "30 μg/m³",
+    "city": "内蒙古-锡林郭勒盟",
+    "state": "优",
+    "ranking": "235"
+  },
+  {
+    "concentration": "17 μg/m³",
+    "city": "宁夏-石嘴山",
+    "state": "优",
+    "ranking": "236"
+  },
+  {
+    "concentration": "11 μg/m³",
+    "city": "吉林-延边州",
+    "state": "优",
+    "ranking": "237"
+  },
+  {
+    "concentration": "17 μg/m³",
+    "city": "山西-朔州",
+    "state": "优",
+    "ranking": "238"
+  },
+  {
+    "concentration": "12 μg/m³",
+    "city": "黑龙江-哈尔滨",
+    "state": "优",
+    "ranking": "239"
+  },
+  {
+    "concentration": "15 μg/m³",
+    "city": "辽宁-铁岭",
+    "state": "优",
+    "ranking": "240"
+  },
+  {
+    "concentration": "28 μg/m³",
+    "city": "江西-萍乡",
+    "state": "优",
+    "ranking": "241"
+  },
+  {
+    "concentration": "20 μg/m³",
+    "city": "辽宁-盘锦",
+    "state": "优",
+    "ranking": "242"
+  },
+  {
+    "concentration": "24 μg/m³",
+    "city": "安徽-黄山",
+    "state": "优",
+    "ranking": "243"
+  },
+  {
+    "concentration": "12 μg/m³",
+    "city": "内蒙古-鄂尔多斯",
+    "state": "优",
+    "ranking": "244"
+  },
+  {
+    "concentration": "13 μg/m³",
+    "city": "云南-迪庆州",
+    "state": "优",
+    "ranking": "245"
+  },
+  {
+    "concentration": "29 μg/m³",
+    "city": "广东-广州",
+    "state": "优",
+    "ranking": "246"
+  },
+  {
+    "concentration": "31 μg/m³",
+    "city": "山西-长治",
+    "state": "优",
+    "ranking": "247"
+  },
+  {
+    "concentration": "15 μg/m³",
+    "city": "浙江-舟山",
+    "state": "优",
+    "ranking": "248"
+  },
+  {
+    "concentration": "33 μg/m³",
+    "city": "广东-云浮",
+    "state": "优",
+    "ranking": "249"
+  },
+  {
+    "concentration": "19 μg/m³",
+    "city": "吉林-白城",
+    "state": "优",
+    "ranking": "250"
+  },
+  {
+    "concentration": "32 μg/m³",
+    "city": "江苏-南通",
+    "state": "优",
+    "ranking": "251"
+  },
+  {
+    "concentration": "15 μg/m³",
+    "city": "宁夏-中卫",
+    "state": "优",
+    "ranking": "252"
+  },
+  {
+    "concentration": "37 μg/m³",
+    "city": "新疆-伊犁哈萨克州",
+    "state": "优",
+    "ranking": "253"
+  },
+  {
+    "concentration": "13 μg/m³",
+    "city": "河南-洛阳",
+    "state": "优",
+    "ranking": "254"
+  },
+  {
+    "concentration": "32 μg/m³",
+    "city": "广东-清远",
+    "state": "优",
+    "ranking": "255"
+  },
+  {
+    "concentration": "14 μg/m³",
+    "city": "甘肃-定西",
+    "state": "优",
+    "ranking": "256"
+  },
+  {
+    "concentration": "8 μg/m³",
+    "city": "黑龙江-伊春",
+    "state": "优",
+    "ranking": "257"
+  },
+  {
+    "concentration": "10 μg/m³",
+    "city": "陕西-榆林",
+    "state": "优",
+    "ranking": "258"
+  },
+  {
+    "concentration": "7 μg/m³",
+    "city": "吉林-长春",
+    "state": "优",
+    "ranking": "259"
+  },
+  {
+    "concentration": "31 μg/m³",
+    "city": "广西-贵港",
+    "state": "优",
+    "ranking": "260"
+  },
+  {
+    "concentration": "26 μg/m³",
+    "city": "广西-梧州",
+    "state": "优",
+    "ranking": "261"
+  },
+  {
+    "concentration": "39 μg/m³",
+    "city": "广西-北海",
+    "state": "优",
+    "ranking": "262"
+  },
+  {
+    "concentration": "9 μg/m³",
+    "city": "甘肃-平凉",
+    "state": "优",
+    "ranking": "263"
+  },
+  {
+    "concentration": "13 μg/m³",
+    "city": "山西-吕梁",
+    "state": "优",
+    "ranking": "264"
+  },
+  {
+    "concentration": "7 μg/m³",
+    "city": "宁夏-固原",
+    "state": "优",
+    "ranking": "265"
+  },
+  {
+    "concentration": "29 μg/m³",
+    "city": "云南-红河州",
+    "state": "优",
+    "ranking": "266"
+  },
+  {
+    "concentration": "18 μg/m³",
+    "city": "西藏-林芝",
+    "state": "优",
+    "ranking": "267"
+  },
+  {
+    "concentration": "10 μg/m³",
+    "city": "辽宁-阜新",
+    "state": "优",
+    "ranking": "268"
+  },
+  {
+    "concentration": "16 μg/m³",
+    "city": "吉林-吉林",
+    "state": "优",
+    "ranking": "269"
+  },
+  {
+    "concentration": "10 μg/m³",
+    "city": "新疆-塔城",
+    "state": "优",
+    "ranking": "270"
+  },
+  {
+    "concentration": "16 μg/m³",
+    "city": "黑龙江-大庆",
+    "state": "优",
+    "ranking": "271"
+  },
+  {
+    "concentration": "17 μg/m³",
+    "city": "辽宁-瓦房店",
+    "state": "优",
+    "ranking": "272"
+  },
+  {
+    "concentration": "14 μg/m³",
+    "city": "吉林-通化",
+    "state": "优",
+    "ranking": "273"
+  },
+  {
+    "concentration": "11 μg/m³",
+    "city": "辽宁-朝阳",
+    "state": "优",
+    "ranking": "274"
+  },
+  {
+    "concentration": "22 μg/m³",
+    "city": "江西-景德镇",
+    "state": "优",
+    "ranking": "275"
+  },
+  {
+    "concentration": "20 μg/m³",
+    "city": "辽宁-鞍山",
+    "state": "优",
+    "ranking": "276"
+  },
+  {
+    "concentration": "26 μg/m³",
+    "city": "山西-运城",
+    "state": "优",
+    "ranking": "277"
+  },
+  {
+    "concentration": "16 μg/m³",
+    "city": "江苏-海门",
+    "state": "优",
+    "ranking": "278"
+  },
+  {
+    "concentration": "32 μg/m³",
+    "city": "福建-宁德",
+    "state": "优",
+    "ranking": "279"
+  },
+  {
+    "concentration": "8 μg/m³",
+    "city": "西藏-山南",
+    "state": "优",
+    "ranking": "280"
+  },
+  {
+    "concentration": "11 μg/m³",
+    "city": "黑龙江-绥化",
+    "state": "优",
+    "ranking": "281"
+  },
+  {
+    "concentration": "17 μg/m³",
+    "city": "江西-上饶",
+    "state": "优",
+    "ranking": "282"
+  },
+  {
+    "concentration": "12 μg/m³",
+    "city": "吉林-辽源",
+    "state": "优",
+    "ranking": "283"
+  },
+  {
+    "concentration": "18 μg/m³",
+    "city": "陕西-宝鸡",
+    "state": "优",
+    "ranking": "284"
+  },
+  {
+    "concentration": "31 μg/m³",
+    "city": "福建-厦门",
+    "state": "优",
+    "ranking": "285"
+  },
+  {
+    "concentration": "12 μg/m³",
+    "city": "宁夏-银川",
+    "state": "优",
+    "ranking": "286"
+  },
+  {
+    "concentration": "20 μg/m³",
+    "city": "福建-福州",
+    "state": "优",
+    "ranking": "287"
+  },
+  {
+    "concentration": "18 μg/m³",
+    "city": "黑龙江-鸡西",
+    "state": "优",
+    "ranking": "288"
+  },
+  {
+    "concentration": "31 μg/m³",
+    "city": "江西-抚州",
+    "state": "优",
+    "ranking": "289"
+  },
+  {
+    "concentration": "31 μg/m³",
+    "city": "甘肃-临夏州",
+    "state": "优",
+    "ranking": "290"
+  },
+  {
+    "concentration": "19 μg/m³",
+    "city": "吉林-白山",
+    "state": "优",
+    "ranking": "291"
+  },
+  {
+    "concentration": "25 μg/m³",
+    "city": "广东-梅州",
+    "state": "优",
+    "ranking": "292"
+  },
+  {
+    "concentration": "28 μg/m³",
+    "city": "内蒙古-通辽",
+    "state": "优",
+    "ranking": "293"
+  },
+  {
+    "concentration": "16 μg/m³",
+    "city": "吉林-四平",
+    "state": "优",
+    "ranking": "294"
+  },
+  {
+    "concentration": "3 μg/m³",
+    "city": "四川-德阳",
+    "state": "优",
+    "ranking": "295"
+  },
+  {
+    "concentration": "14 μg/m³",
+    "city": "陕西-咸阳",
+    "state": "优",
+    "ranking": "296"
+  },
+  {
+    "concentration": "6 μg/m³",
+    "city": "甘肃-天水",
+    "state": "优",
+    "ranking": "297"
+  },
+  {
+    "concentration": "16 μg/m³",
+    "city": "四川-成都",
+    "state": "优",
+    "ranking": "298"
+  },
+  {
+    "concentration": "17 μg/m³",
+    "city": "内蒙古-巴彦淖尔",
+    "state": "优",
+    "ranking": "299"
+  },
+  {
+    "concentration": "10 μg/m³",
+    "city": "黑龙江-黑河",
+    "state": "优",
+    "ranking": "300"
+  },
+  {
+    "concentration": "23 μg/m³",
+    "city": "甘肃-甘南州",
+    "state": "优",
+    "ranking": "301"
+  },
+  {
+    "concentration": "25 μg/m³",
+    "city": "湖南-怀化",
+    "state": "优",
+    "ranking": "302"
+  },
+  {
+    "concentration": "14 μg/m³",
+    "city": "福建-三明",
+    "state": "优",
+    "ranking": "303"
+  },
+  {
+    "concentration": "4 μg/m³",
+    "city": "甘肃-陇南",
+    "state": "优",
+    "ranking": "304"
+  },
+  {
+    "concentration": "21 μg/m³",
+    "city": "内蒙古-阿拉善盟",
+    "state": "优",
+    "ranking": "305"
+  },
+  {
+    "concentration": "6 μg/m³",
+    "city": "宁夏-吴忠",
+    "state": "优",
+    "ranking": "306"
+  },
+  {
+    "concentration": "15 μg/m³",
+    "city": "甘肃-庆阳",
+    "state": "优",
+    "ranking": "307"
+  },
+  {
+    "concentration": "3 μg/m³",
+    "city": "新疆-阿勒泰",
+    "state": "优",
+    "ranking": "308"
+  },
+  {
+    "concentration": "18 μg/m³",
+    "city": "广西-河池",
+    "state": "优",
+    "ranking": "309"
+  },
+  {
+    "concentration": "14 μg/m³",
+    "city": "内蒙古-赤峰",
+    "state": "优",
+    "ranking": "310"
+  },
+  {
+    "concentration": "5 μg/m³",
+    "city": "内蒙古-呼伦贝尔",
+    "state": "优",
+    "ranking": "311"
+  },
+  {
+    "concentration": "17 μg/m³",
+    "city": "云南-文山州",
+    "state": "优",
+    "ranking": "312"
+  },
+  {
+    "concentration": "13 μg/m³",
+    "city": "四川-眉山",
+    "state": "优",
+    "ranking": "313"
+  },
+  {
+    "concentration": "26 μg/m³",
+    "city": "广西-钦州",
+    "state": "优",
+    "ranking": "314"
+  },
+  {
+    "concentration": "3 μg/m³",
+    "city": "西藏-阿里",
+    "state": "优",
+    "ranking": "315"
+  },
+  {
+    "concentration": "14 μg/m³",
+    "city": "湖北-十堰",
+    "state": "优",
+    "ranking": "316"
+  },
+  {
+    "concentration": "17 μg/m³",
+    "city": "西藏-昌都",
+    "state": "优",
+    "ranking": "317"
+  },
+  {
+    "concentration": "6 μg/m³",
+    "city": "黑龙江-大兴安岭",
+    "state": "优",
+    "ranking": "318"
+  },
+  {
+    "concentration": "7 μg/m³",
+    "city": "四川-宜宾",
+    "state": "优",
+    "ranking": "319"
+  },
+  {
+    "concentration": "8 μg/m³",
+    "city": "内蒙古-乌海",
+    "state": "优",
+    "ranking": "320"
+  },
+  {
+    "concentration": "6 μg/m³",
+    "city": "云南-昭通",
+    "state": "优",
+    "ranking": "321"
+  },
+  {
+    "concentration": "15 μg/m³",
+    "city": "四川-绵阳",
+    "state": "优",
+    "ranking": "322"
+  },
+  {
+    "concentration": "12 μg/m³",
+    "city": "陕西-汉中",
+    "state": "优",
+    "ranking": "323"
+  },
+  {
+    "concentration": "7 μg/m³",
+    "city": "四川-甘孜州",
+    "state": "优",
+    "ranking": "324"
+  },
+  {
+    "concentration": "12 μg/m³",
+    "city": "福建-南平",
+    "state": "优",
+    "ranking": "325"
+  },
+  {
+    "concentration": "6 μg/m³",
+    "city": "贵州-贵阳",
+    "state": "优",
+    "ranking": "326"
+  },
+  {
+    "concentration": "19 μg/m³",
+    "city": "广东-茂名",
+    "state": "优",
+    "ranking": "327"
+  },
+  {
+    "concentration": "6 μg/m³",
+    "city": "四川-阿坝州",
+    "state": "优",
+    "ranking": "328"
+  },
+  {
+    "concentration": "9 μg/m³",
+    "city": "四川-资阳",
+    "state": "优",
+    "ranking": "329"
+  },
+  {
+    "concentration": "24 μg/m³",
+    "city": "广西-贺州",
+    "state": "优",
+    "ranking": "330"
+  },
+  {
+    "concentration": "8 μg/m³",
+    "city": "四川-南充",
+    "state": "优",
+    "ranking": "331"
+  },
+  {
+    "concentration": "13 μg/m³",
+    "city": "陕西-西安",
+    "state": "优",
+    "ranking": "332"
+  },
+  {
+    "concentration": "5 μg/m³",
+    "city": "四川-广元",
+    "state": "优",
+    "ranking": "333"
+  },
+  {
+    "concentration": "19 μg/m³",
+    "city": "广东-湛江",
+    "state": "优",
+    "ranking": "334"
+  },
+  {
+    "concentration": "13 μg/m³",
+    "city": "贵州-铜仁",
+    "state": "优",
+    "ranking": "335"
+  },
+  {
+    "concentration": "4 μg/m³",
+    "city": "四川-达州",
+    "state": "优",
+    "ranking": "336"
+  },
+  {
+    "concentration": "14 μg/m³",
+    "city": "贵州-遵义",
+    "state": "优",
+    "ranking": "337"
+  },
+  {
+    "concentration": "22 μg/m³",
+    "city": "四川-自贡",
+    "state": "优",
+    "ranking": "338"
+  },
+  {
+    "concentration": "11 μg/m³",
+    "city": "海南-海口",
+    "state": "优",
+    "ranking": "339"
+  },
+  {
+    "concentration": "6 μg/m³",
+    "city": "四川-乐山",
+    "state": "优",
+    "ranking": "340"
+  },
+  {
+    "concentration": "22 μg/m³",
+    "city": "河南-三门峡",
+    "state": "优",
+    "ranking": "341"
+  },
+  {
+    "concentration": "15 μg/m³",
+    "city": "湖北-恩施州",
+    "state": "优",
+    "ranking": "342"
+  },
+  {
+    "concentration": "2 μg/m³",
+    "city": "四川-遂宁",
+    "state": "优",
+    "ranking": "343"
+  },
+  {
+    "concentration": "13 μg/m³",
+    "city": "四川-雅安",
+    "state": "优",
+    "ranking": "344"
+  },
+  {
+    "concentration": "12 μg/m³",
+    "city": "广西-防城港",
+    "state": "优",
+    "ranking": "345"
+  },
+  {
+    "concentration": "13 μg/m³",
+    "city": "陕西-渭南",
+    "state": "优",
+    "ranking": "346"
+  },
+  {
+    "concentration": "10 μg/m³",
+    "city": "内蒙古-兴安盟",
+    "state": "优",
+    "ranking": "347"
+  },
+  {
+    "concentration": "8 μg/m³",
+    "city": "广西-百色",
+    "state": "优",
+    "ranking": "348"
+  },
+  {
+    "concentration": "15 μg/m³",
+    "city": "贵州-黔东南州",
+    "state": "优",
+    "ranking": "349"
+  },
+  {
+    "concentration": "9 μg/m³",
+    "city": "四川-广安",
+    "state": "优",
+    "ranking": "350"
+  },
+  {
+    "concentration": "6 μg/m³",
+    "city": "陕西-安康",
+    "state": "优",
+    "ranking": "351"
+  },
+  {
+    "concentration": "11 μg/m³",
+    "city": "贵州-毕节",
+    "state": "优",
+    "ranking": "352"
+  },
+  {
+    "concentration": "1 μg/m³",
+    "city": "四川-内江",
+    "state": "优",
+    "ranking": "353"
+  },
+  {
+    "concentration": "11 μg/m³",
+    "city": "陕西-商洛",
+    "state": "优",
+    "ranking": "354"
+  },
+  {
+    "concentration": "14 μg/m³",
+    "city": "贵州-黔南州",
+    "state": "优",
+    "ranking": "355"
+  },
+  {
+    "concentration": "4 μg/m³",
+    "city": "四川-巴中",
+    "state": "优",
+    "ranking": "356"
+  },
+  {
+    "concentration": "9 μg/m³",
+    "city": "贵州-六盘水",
+    "state": "优",
+    "ranking": "357"
+  },
+  {
+    "concentration": "14 μg/m³",
+    "city": "贵州-黔西南州",
+    "state": "优",
+    "ranking": "358"
+  },
+  {
+    "concentration": "6 μg/m³",
+    "city": "四川-泸州",
+    "state": "优",
+    "ranking": "359"
+  },
+  {
+    "concentration": "6 μg/m³",
+    "city": "重庆-重庆",
+    "state": "优",
+    "ranking": "360"
+  },
+  {
+    "concentration": "12 μg/m³",
+    "city": "海南-三亚",
+    "state": "优",
+    "ranking": "361"
+  }
+]

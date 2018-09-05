@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <!-- 引入 echarts.js -->
+    <script src="echarts.min.js"></script>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main" style="width:1600px;height:700px;"></div>
+    <script src="PM2.5.json"></script>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+
+        // 指定图表的配置项和数据
+        // var option = {
+        //     title: {
+        //         text: 'PM2.5'
+        //     },
+        //     tooltip: {},
+        //     legend: {
+        //         data:['PM2.5浓度']
+        //     },
+        //     xAxis: {
+        //         data: []
+        //     },
+        //     yAxis: {},
+        //     series: [{
+        //         name: 'PM2.5浓度',
+        //         type: 'bar',
+        //         data: []
+        //     }]
+        // }
+
+        var option = {
+            title : {
+                text: '全国PM2.5',
+            },
+            tooltip : {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['PM2.5浓度']
+            },
+            toolbox: {
+                show : true,
+                feature : {
+                    dataView : {show: true, readOnly: false},
+                    magicType : {show: true, type: ['line', 'bar']},
+                    restore : {show: true},
+                    saveAsImage : {show: true}
+                }
+            },
+            calculable : true,
+            xAxis : [
+                {
+                    type : 'category',
+                    data : []
+                }
+            ],
+            yAxis : [
+                {
+                    type : 'value'
+                }
+            ],
+            series : [
+                {
+                    name:'PM2.5浓度',
+                    type:'bar',
+                    data:[],
+                    markPoint : {
+                        data : [
+                            {type : 'max', name: '最大值'},
+                            {type : 'min', name: '最小值'}
+                        ]
+                    },
+                    markLine : {
+                        data : [
+                            {type : 'average', name: '平均值'}
+                        ]
+                    }
+                },
+            ]
+        }
+
+
+
+        for (var i = 0; i < cityStore.length; i++) {
+          var num = cityStore[i].concentration.split(' ')[0]
+          var city = cityStore[i].city
+          option.series[0].data.push(num)
+          option.xAxis[0].data.push(city)
+        }
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+</body>
+</html>
